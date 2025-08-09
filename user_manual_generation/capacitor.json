@@ -1,0 +1,33 @@
+{
+  "product_id": "CAP-EL-2200uF-16V-RBC",
+  "specifications": {
+    "type": "Electrolytic Capacitor",
+    "capacitance": "2200 µF",
+    "rated_voltage": "16 V DC",
+    "tolerance": "±20%",
+    "temperature_range": "-40°C to +85°C",
+    "polarity": "Polarized",
+    "dimensions": {
+      "diameter": "12.5 mm",
+      "length": "25 mm"
+    },
+    "lead_spacing": "5 mm",
+    "brand": "Robicon"
+  },
+  "image_path": "https://m.media-amazon.com/images/I/51acByLomWL.jpg",
+  "safety_precautions": [
+    "Observe correct polarity when connecting; reversing can cause leakage, overheating, or explosion.",
+    "Do not exceed rated voltage of 16 V DC.",
+    "Avoid exposure to temperatures above 85°C.",
+    "Do not short circuit the capacitor terminals.",
+    "Discharge the capacitor before handling or soldering to avoid electric shock.",
+    "Store in a dry, cool place away from direct sunlight."
+  ],
+  "user_tasks": [
+    "Check polarity markings before installation.",
+    "Ensure operating voltage is below 16 V DC.",
+    "Use appropriate soldering temperature to avoid damage to the component.",
+    "Periodically inspect for bulging, leakage, or discoloration.",
+    "Replace immediately if any signs of damage or performance degradation are observed."
+  ]
+}
