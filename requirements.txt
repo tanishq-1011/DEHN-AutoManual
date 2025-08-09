@@ -8,3 +8,4 @@ deepl
 pymupdf
 streamlit
 PyQt6
+reportlab

@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 from make_pdf import main
+from markdown import convert_pdf_to_markdown
 
 # Brand colors
 DEHN_RED = "#E3000B"
@@ -131,12 +132,18 @@ if uploaded_file is not None:
         spinner_placeholder.markdown(spinner_html, unsafe_allow_html=True)
 
         # Generate PDF
+
         main(json_path)
         spinner_placeholder.empty()
 
-        pdf_name = "CAP-EL-2200uF-16V-RBC_user-manual.pdf"
+        pdf_name = "DOCUMENT_EDIT_TARGET_PATH"
+        md_name = pdf_name.replace('.pdf', '.md')
+
+        # Generate markdown from PDF
         if os.path.exists(pdf_name):
-            # Download button
+            convert_pdf_to_markdown(pdf_name, md_name)
+
+            # Download button styles
             st.markdown(
                 f"""
                 <style>
@@ -165,12 +172,25 @@ if uploaded_file is not None:
             st.markdown("<div style='display: flex; justify-content: center; margin-top: 30px;'>", unsafe_allow_html=True)
             with open(pdf_name, "rb") as f:
                 st.download_button(
-                    label="⬇️ Download User-Manual",
+                    label="⬇️ Download User-Manual (PDF)",
                     data=f,
                     file_name=pdf_name,
                     mime="application/pdf"
                 )
             st.markdown("</div>", unsafe_allow_html=True)
+
+            # Markdown download button
+            if os.path.exists(md_name):
+                st.markdown("<div style='display: flex; justify-content: center; margin-top: 10px;'>", unsafe_allow_html=True)
+                with open(md_name, "r", encoding="utf-8") as f:
+                    st.download_button(
+                        label="⬇️ Download User-Manual (Markdown)",
+                        data=f.read(),
+                        file_name=md_name,
+                        mime="text/markdown"
+                    )
+                st.markdown("</div>", unsafe_allow_html=True)
+
             st.success("User manual generated successfully!")
         else:
             st.error("PDF was not generated.")
