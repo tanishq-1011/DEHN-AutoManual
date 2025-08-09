@@ -1,0 +1,5 @@
+markitdown[all]
+python-dotenv
+requests
+groq
+openai

@@ -1,0 +1,73 @@
+/* Basic styling and DEHN color variables */
+:root {
+    --dehn-red: #D9232D;
+    --dark-grey: #333;
+    --medium-grey: #f4f4f4;
+    --light-grey: #ccc;
+    --success-green: #28a745;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--medium-grey);
+    color: var(--dark-grey);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+header p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* The styled button that replaces the ugly file input */
+.upload-btn {
+    display: inline-block;
+    background-color: var(--dehn-red);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #b81c25; /* A darker shade of DEHN red */
+}
+
+/* Feedback message styling */
+.feedback {
+    margin-top: 20px;
+    font-size: 14px;
+    min-height: 20px; /* Prevents layout shift */
+}
+
+/* Style for successful messages */
+.feedback.success {
+    color: var(--success-green);
+    font-weight: bold;
+}

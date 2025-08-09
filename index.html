@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEHN Admin - Manual Upload</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://www.dehn-international.com/favicon.ico">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="D:\FAU\Hackathons\Servus AI Hackathon\Our Challenge\Admin web page\DEHN logo.png" alt="DEHN Logo" class="logo">
+            <h1>Manual Upload Portal</h1>
+            <p>Select a PDF manual file to process and add it to the knowledge base.</p>
+        </header>
+
+        <main class="upload-section">
+            <!-- The actual file input is hidden -->
+            <input type="file" id="file-input" accept=".pdf" hidden>
+
+            <!-- This styled label is what the user clicks -->
+            <label for="file-input" class="upload-btn">Choose PDF File</label>
+
+            <!-- This div will provide feedback to the user -->
+            <div id="feedback-message" class="feedback"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

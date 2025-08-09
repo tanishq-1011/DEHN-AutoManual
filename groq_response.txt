@@ -1,0 +1,1 @@
+Um das Gerät zu testen, stellen Sie sicher, dass die Versorgungsspannung anliegt. LED 1 blinkt grün, wenn die Spannungsversorgung korrekt ist. LED 2 leuchtet grün, wenn die Spannungsqualität den Werkseinstellungen entspricht. Zusätzlich können Sie über den Webserver die Messwerte prüfen.
