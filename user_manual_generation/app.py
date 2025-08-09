@@ -44,9 +44,20 @@ st.markdown(f"""
 
 uploaded_file = st.file_uploader("Choose Product Information File", type=["json"])
 
+import json
+
 if uploaded_file is not None:
+    # Display JSON in sidebar
+    try:
+        json_data = json.load(uploaded_file)
+        st.sidebar.header("Uploaded JSON Preview")
+        st.sidebar.json(json_data)
+    except Exception as e:
+        st.sidebar.error(f"Could not parse JSON: {e}")
+
+    # Save file for processing
     json_path = save_uploaded_file(uploaded_file)
-    
+
     # Center button
     col1, col2, col3 = st.columns([2, 4, 2])
     with col2:
