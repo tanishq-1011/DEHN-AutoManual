@@ -1,0 +1,712 @@
+[
+   {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNRecord SD 11",
+    "artikelnummer": "910920",
+    "technische_spezifikation": "Typ 1+2 Kombiableiter, UN 230/400 V AC, UC 255 V AC",
+    "ausfuehrung_merkmal": "TT-System"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNshield DSH TT 255",
+    "artikelnummer": "941310",
+    "technische_spezifikation": "Typ 1+2 Kombiableiter, UN 230/400 V AC, UC 255 V AC",
+    "ausfuehrung_merkmal": "TT-System"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNshield DSH TT 255 FM",
+    "artikelnummer": "941315",
+    "technische_spezifikation": "Typ 1+2 Kombiableiter, UN 230/400 V AC, UC 255 V AC",
+    "ausfuehrung_merkmal": "Fernmeldekontakt (FM), TT-System"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNshield DSH TNC 255",
+    "artikelnummer": "941300",
+    "technische_spezifikation": "Typ 1+2 Kombiableiter, UN 230/400 V AC, UC 255 V AC",
+    "ausfuehrung_merkmal": "TNC-System"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNshield DSH TNC 255 FM",
+    "artikelnummer": "941305",
+    "technische_spezifikation": "Typ 1+2 Kombiableiter, UN 230/400 V AC, UC 255 V AC",
+    "ausfuehrung_merkmal": "Fernmeldekontakt (FM), TNC-System"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNshield DSH TN 255",
+    "artikelnummer": "941200",
+    "technische_spezifikation": "Typ 1+2 Kombiableiter, UN 230/400 V AC, UC 255 V AC",
+    "ausfuehrung_merkmal": "TN-System"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNshield DSH TN 255 FM",
+    "artikelnummer": "941205",
+    "technische_spezifikation": "Typ 1+2 Kombiableiter, UN 230/400 V AC, UC 255 V AC",
+    "ausfuehrung_merkmal": "Fernmeldekontakt (FM), TN-System"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNshield DSH TT 2P 255",
+    "artikelnummer": "941110",
+    "technische_spezifikation": "Typ 1+2 Kombiableiter, UN 230/400 V AC, UC 255 V AC",
+    "ausfuehrung_merkmal": "2-polig, TT-System"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNguard TT 5 275 (DG TT 5 275)",
+    "artikelnummer": "900455",
+    "technische_spezifikation": "Typ 2, 3+1-Schaltung, UC 275 V AC",
+    "ausfuehrung_merkmal": "für TT- und TN-S-Systeme"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNguard M TNS ACI 275 FM (DG MP TNS ACI 275 FM)",
+    "artikelnummer": "942440",
+    "technische_spezifikation": "Typ 2, ACI-Technologie, TOV 335 V/5 s und 440 V/120 min",
+    "ausfuehrung_merkmal": "Fernmeldekontakt (FM), TN-S-System"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNrail M 2P 255 (DR M 2P 255)",
+    "artikelnummer": "953200",
+    "technische_spezifikation": "Typ 3, UC 255 V, In 3 kA, Itotal 5 kA",
+    "ausfuehrung_merkmal": "zweipolig, steckbares Modul"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNrail M 2P 75 (DR M 2P 75)",
+    "artikelnummer": "953203",
+    "technische_spezifikation": "Typ 3, UC 75 V, In 2 kA, Up ≤ 0,73 kV",
+    "ausfuehrung_merkmal": "zweipolig, steckbares Modul"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNrail M 2P 30 (DR M 2P 30)",
+    "artikelnummer": "953201",
+    "technische_spezifikation": "Typ 3 (Daten aus Produktfamilie DR M 2P …)",
+    "ausfuehrung_merkmal": "zweipolig, steckbares Modul"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNbloc Modular DB M 1 255",
+    "artikelnummer": "961120",
+    "technische_spezifikation": "Typ 1, Iimp 50 kA (10/350 µs), UC 255 V, Up ≤ 2,5 kV",
+    "ausfuehrung_merkmal": "1-polig, modulare Bauweise"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNcombo YPV 1200",
+    "artikelnummer": "900070",
+    "technische_spezifikation": "PV-Kombiableiter bis 1200 V DC (Familie bis 1500 V DC)",
+    "ausfuehrung_merkmal": "für PV-Gleichspannung, Kombiableiter"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNprotector DPRO 230 NT",
+    "artikelnummer": "909310",
+    "technische_spezifikation": "Kombiadapter (Netz+Antennen-Seite), UC (DC) 180 V",
+    "ausfuehrung_merkmal": "Schutzadapter zum Zwischenstecken"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNventil M TNS 255 FM",
+    "artikelnummer": "951405",
+    "technische_spezifikation": "Kombiableiter Typ 1+2, Itotal 100 kA (10/350 µs), UC 264 V AC",
+    "ausfuehrung_merkmal": "Modular, Fernmeldekontakt (FM), TN-S"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNventil M2 TT 2P 255 FM",
+    "artikelnummer": "956115",
+    "technische_spezifikation": "Kombiableiter Typ 1+2, 1+1-Schaltung, UC 255 V AC",
+    "ausfuehrung_merkmal": "Modular, 2-polig, FM"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNflex M 255",
+    "artikelnummer": "924396",
+    "technische_spezifikation": "Typ 3, UN 230 V, UC 255 V, In 1.5 kA",
+    "ausfuehrung_merkmal": "Kompakt, für Unterputz/Installationskanal"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNflex A 255",
+    "artikelnummer": "924389",
+    "technische_spezifikation": "Typ 3, für 230 V TT/TN",
+    "ausfuehrung_merkmal": "Mit Testfunktion, kompakte Bauform"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNcord 1P 275 D FM",
+    "artikelnummer": "900439",
+    "technische_spezifikation": "Typ 2/3, UC 275 V AC, Schutz DALI-Schnittstelle",
+    "ausfuehrung_merkmal": "1-polig, Fernmeldekontakt"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNcord L 2P 275 SO IP",
+    "artikelnummer": "900448",
+    "technische_spezifikation": "Typ 2, UC 275 V AC, Up ≤ 1.5 kV, In 5 kA",
+    "ausfuehrung_merkmal": "mit Anschlussleitungen, IP-Design für Mastleuchten"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNcombo YPV 1500 FM",
+    "artikelnummer": "900071",
+    "technische_spezifikation": "PV-Kombiableiter bis 1500 V DC, Typ 1+2",
+    "ausfuehrung_merkmal": "Mit Fernmeldekontakt, PV-Gleichspannungsseite"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNshield DSH TNS 255",
+    "artikelnummer": "941400",
+    "technische_spezifikation": "Typ 1+2, 4+0, UN 230/400 V, UC 255 V AC",
+    "ausfuehrung_merkmal": "Vormontiert, für TN-S"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNshield DSH TNS 255 FM",
+    "artikelnummer": "941405",
+    "technische_spezifikation": "Typ 1+2, 4+0, UN 230/400 V, UC 255 V AC",
+    "ausfuehrung_merkmal": "FM-Kontakt, TN-S"
+  },
+  {
+    "produktlinie": "Red/Line",
+    "typ_modell": "DEHNshield DSH TNC 255 FM",
+    "artikelnummer": "941305",
+    "technische_spezifikation": "Typ 1+2, 3+0, UN 230/400 V",
+    "ausfuehrung_merkmal": "FM-Kontakt, TN-C"
+  },
+
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch DPA M Class E",
+    "artikelnummer": "929120",
+    "technische_spezifikation": "Class E bis 250 MHz, PoE+ geeignet",
+    "ausfuehrung_merkmal": "Für Hutschienenmontage, RJ45"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "BLITZDUCTOR XT BXT ML4 BD 180",
+    "artikelnummer": "920333",
+    "technische_spezifikation": "Vierpoliger Blitz- und Überspannungsableiter, D1 2,5 kA, C2 20 kA",
+    "ausfuehrung_merkmal": "LifeCheck, steckbar"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch DPA CL8 EA 4PPOE (Class EA)",
+    "artikelnummer": "929161",
+    "technische_spezifikation": "Ethernet bis 10 Gbit/s (Class EA/500 MHz), SPD-Klasse L, D1 0.5 kA/Leiter, C2 ges. 10 kA",
+    "ausfuehrung_merkmal": "RJ45 Buchse-Buchse, PoE++/4PPoE"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch DPA C8 D 4PPOE (Class D)",
+    "artikelnummer": "929166",
+    "technische_spezifikation": "Industrial Ethernet/PoE, SPD-Daten gemäß Datenblatt",
+    "ausfuehrung_merkmal": "RJ45 Buchse-Buchse, Class D"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch DPA M CLE RJ45B 48 (Class E)",
+    "artikelnummer": "929121",
+    "technische_spezifikation": "Class E bis 250 MHz, D1 4 kA (gesamt), C2 ges. 10 kA",
+    "ausfuehrung_merkmal": "Hutschienen-Adapter, RJ45, PoE++ geeignet"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch DPA CLE IP66 (Class E)",
+    "artikelnummer": "929221",
+    "technische_spezifikation": "IP66, PoE++/4PPoE, EN 61643-21, Typ 2/P1",
+    "ausfuehrung_merkmal": "Outdoor-Gehäuse, RJ45, Mast-/Wandhalter"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "BLITZDUCTOR XT BXT ML4 B 180",
+    "artikelnummer": "920334",
+    "technische_spezifikation": "Vierpoliges Blitzstrom-Modul, LifeCheck, für nachgeschaltete Q-Ableiter",
+    "ausfuehrung_merkmal": "RFID-LifeCheck, steckbar"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "BLITZDUCTOR XT BXT ML4 BPD 24",
+    "artikelnummer": "920314",
+    "technische_spezifikation": "Kombinierter Blitz-/Überspannungsableiter für 4 Einzeladern",
+    "ausfuehrung_merkmal": "LifeCheck, steckbar"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "BLITZDUCTOR XT BXT ML4 BE C 12/24",
+    "artikelnummer": "920362",
+    "technische_spezifikation": "Kombi-Ableiter für zwei Paare (symmetrisch), Dioden-Schaltung",
+    "ausfuehrung_merkmal": "LifeCheck, steckbar"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "BLITZDUCTOR XT BXT ML4 BE C 12/24 (Variante)",
+    "artikelnummer": "920364",
+    "technische_spezifikation": "Kombi-Ableiter, 2× symmetrische Paare, LifeCheck",
+    "ausfuehrung_merkmal": "RFID-LifeCheck, steckbar"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "BLITZDUCTOR XT Ex (i) BXT ML4 BD EX 24",
+    "artikelnummer": "920381",
+    "technische_spezifikation": "Ex-i Schutzmodule, max. Ableitvermögen für 2/3/4-polige Schnittstellen",
+    "ausfuehrung_merkmal": "ATEX/IECEx, LifeCheck"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch DPA M CAT6",
+    "artikelnummer": "929221",
+    "technische_spezifikation": "Cat.6/Class EA bis 500 MHz, bis 10 Gbit/s",
+    "ausfuehrung_merkmal": "Hutschiene, vollgeschirmt"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNprotector – Combined Adapter DPRO 230 NT (Daten+Netz)",
+    "artikelnummer": "909310",
+    "technische_spezifikation": "Netz: Typ 3, UC 255 V; Daten: Klasse Q, UC 3.3 V (RJ12)",
+    "ausfuehrung_merkmal": "Zwischensteck-Adapter mit Anzeige"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNprotector – Combined Adapter DPRO 230 TV (Netz+Antenne)",
+    "artikelnummer": "—",
+    "technische_spezifikation": "Kombischutz für TV/Radio/Sat (Netz+Antennenseite)",
+    "ausfuehrung_merkmal": "Sichtanzeige, Kindersicherung"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch DPA CL8 EA 4PPOE (Datenblattwerte)",
+    "artikelnummer": "929161",
+    "technische_spezifikation": "UC 3.3 V (Leiter), UC PoE 58 V, D1 0.5 kA/Leiter, C2 ges. 10 kA",
+    "ausfuehrung_merkmal": "RJ45, GHMT/UL497B"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch DPA C8 D 4PPOE (Datenblattwerte)",
+    "artikelnummer": "929166",
+    "technische_spezifikation": "UC 3.3 V, PoE 58 V, C2-Ströme lt. Datenblatt",
+    "ausfuehrung_merkmal": "RJ45, Class D"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "BLITZDUCTOR XT – Protection Module (Serie)",
+    "artikelnummer": "—",
+    "technische_spezifikation": "Kombi-Ableiter bis 10 kA (10/350 µs), niedrige Up",
+    "ausfuehrung_merkmal": "LifeCheck, steckbar"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch DPA CLE IP66 – Outdoor",
+    "artikelnummer": "929221",
+    "technische_spezifikation": "IP66, Typ 2/P1, bis 60 V DC Dienste",
+    "ausfuehrung_merkmal": "Pole/Wall Mount, vollgeschirmt"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch DPA M Class EA",
+    "artikelnummer": "929121",
+    "technische_spezifikation": "Class EA bis 500 MHz, PoE++ geeignet",
+    "ausfuehrung_merkmal": "Für DIN-Schienenmontage"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch DPA IP66 Industrial",
+    "artikelnummer": "929222",
+    "technische_spezifikation": "IP66, Class EA, 10 Gbit/s",
+    "ausfuehrung_merkmal": "Robustes Outdoor-Gehäuse"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "BLITZDUCTOR XT ML2",
+    "artikelnummer": "920300",
+    "technische_spezifikation": "2-poliger Schutz für Signalleitungen",
+    "ausfuehrung_merkmal": "Steckmodul, LifeCheck"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "BLITZDUCTOR XT ML4",
+    "artikelnummer": "920301",
+    "technische_spezifikation": "4-poliger Schutz für Signalleitungen",
+    "ausfuehrung_merkmal": "Steckmodul, LifeCheck"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch Compact Cat6A",
+    "artikelnummer": "929170",
+    "technische_spezifikation": "Cat.6A, 10 Gbit/s, PoE++",
+    "ausfuehrung_merkmal": "Kompakte Bauform"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "DEHNpatch Compact Cat5E",
+    "artikelnummer": "929171",
+    "technische_spezifikation": "Cat.5E, 1 Gbit/s, PoE",
+    "ausfuehrung_merkmal": "Kompakte Bauform"
+  },
+  {
+    "produktlinie": "Yellow/Line",
+    "typ_modell": "BLITZDUCTOR XT Ex (i) BD EX",
+    "artikelnummer": "920390",
+    "technische_spezifikation": "Ex-geschützter Überspannungsschutz",
+    "ausfuehrung_merkmal": "ATEX-Zertifizierung"
+  },
+  
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Erdeinführungsstangen-Set St/tZn",
+    "artikelnummer": "480150",
+    "technische_spezifikation": "Länge 1500 mm, Ø 16 mm, Werkstoff St/tZn, Trennmuffe + KS-Schrauben",
+    "ausfuehrung_merkmal": "Komplett-Set mit Trennmuffe und Anschlussklemmen (St/tZn)"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Erdeinführungsstangen-Set Cu",
+    "artikelnummer": "480157",
+    "technische_spezifikation": "Länge 1500 mm, Ø 16 mm, Werkstoff Cu, Trennmuffe + KS-Schrauben",
+    "ausfuehrung_merkmal": "Komplett-Set mit Trennmuffe und Anschlussklemmen (Cu)"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Erdungsspieß St/tZn 450 mm",
+    "artikelnummer": "634145",
+    "technische_spezifikation": "Profil 50×50×3 mm, Länge 450 mm, St/tZn; Spitze-Ausführung",
+    "ausfuehrung_merkmal": "Zur Erdung beweglicher Objekte"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Erdungsspieß St/tZn 600 mm",
+    "artikelnummer": "634160",
+    "technische_spezifikation": "Profil 50×50×3 mm, Länge 600 mm, St/tZn; Spitze-Ausführung",
+    "ausfuehrung_merkmal": "Zur Erdung beweglicher Objekte"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Erdungsleitung EL10 L2.05M",
+    "artikelnummer": "410720",
+    "technische_spezifikation": "Kupferleitung 10 mm², Länge 2,05 m, frost- und UV-stabilisiert",
+    "ausfuehrung_merkmal": "Kabelschuh offen + Stiftkabelschuh"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Erdungsleitung EL16 L1.55M",
+    "artikelnummer": "416016",
+    "technische_spezifikation": "Kupferleitung 16 mm², Länge 1,55 m, frost- und UV-stabilisiert",
+    "ausfuehrung_merkmal": "Kabelschuh offen + Stiftkabelschuh"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Erdungsleitung EL10 L0.65M",
+    "artikelnummer": "410606",
+    "technische_spezifikation": "Kupferleitung 10 mm², Länge 0,65 m, frost- und UV-stabilisiert",
+    "ausfuehrung_merkmal": "Kabelschuh geschlossen + Stiftkabelschuh"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Erdungsklemme klein",
+    "artikelnummer": "435805",
+    "technische_spezifikation": "TG/tZn Klemmkörper, M8-Flügelschraube, Rohr Ø 4-45 mm",
+    "ausfuehrung_merkmal": "Kleiner Typ"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Erdungsklemme groß",
+    "artikelnummer": "435803",
+    "technische_spezifikation": "TG/tZn Klemmkörper, M8-Flügelschraube, Rohr Ø 12-60 mm",
+    "ausfuehrung_merkmal": "Großer Typ"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Erdungssammelschiene 3-polig",
+    "artikelnummer": "465801",
+    "technische_spezifikation": "St/tZn, 3-Pol, Länge 181 mm, Schlitz + Verdrehschutz",
+    "ausfuehrung_merkmal": "3 Anschlüsse"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Erdungssammelschiene 5-polig",
+    "artikelnummer": "466192",
+    "technische_spezifikation": "St/tZn, 5-Pol, Länge 290 mm, Schlitz + Verdrehschutz",
+    "ausfuehrung_merkmal": "5 Anschlüsse"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Tiefenerder TE 20 1000 Z St/tZn",
+    "artikelnummer": "620101",
+    "technische_spezifikation": "Länge 1000 mm, Ø 20 mm, Kurzschlussstrom 7,9 kA",
+    "ausfuehrung_merkmal": "Typ Z mit Dreifach-Rändelzapfen"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Tiefenerder TE 20 1500 Z St/tZn",
+    "artikelnummer": "620151",
+    "technische_spezifikation": "Länge 1500 mm, Ø 20 mm, Kurzschlussstrom 7,9 kA",
+    "ausfuehrung_merkmal": "Typ Z mit Dreifach-Rändelzapfen"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Tiefenerder TE 25 1000 Z St/tZn",
+    "artikelnummer": "625101",
+    "technische_spezifikation": "Länge 1000 mm, Ø 25 mm, Kurzschlussstrom 12,3 kA",
+    "ausfuehrung_merkmal": "Typ Z mit Dreifach-Rändelzapfen"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Tiefenerder TE 25 1500 Z St/tZn",
+    "artikelnummer": "625151",
+    "technische_spezifikation": "Länge 1500 mm, Ø 25 mm, Kurzschlussstrom 12,3 kA",
+    "ausfuehrung_merkmal": "Typ Z mit Dreifach-Rändelzapfen"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Fangleiterhalter Universal",
+    "artikelnummer": "275201",
+    "technische_spezifikation": "Kunststoffhalter für Runddraht Ø 8–10 mm, UV-beständig",
+    "ausfuehrung_merkmal": "Zur Befestigung auf Dächern und Fassaden"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Fangleiterhalter für Metallblechdächer",
+    "artikelnummer": "275301",
+    "technische_spezifikation": "Halter aus Edelstahl, passend für Runddraht Ø 8–10 mm",
+    "ausfuehrung_merkmal": "Zur Montage auf Stehfalzdächern"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Fangstange teleskopierbar 3,5 m",
+    "artikelnummer": "102335",
+    "technische_spezifikation": "Aluminium, teleskopierbar von 2,1 bis 3,5 m",
+    "ausfuehrung_merkmal": "Für temporären Blitzschutz"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Fangstange 2,0 m Glasfaser",
+    "artikelnummer": "102320",
+    "technische_spezifikation": "Glasfaserverstärkter Kunststoff, Länge 2 m",
+    "ausfuehrung_merkmal": "Isolierte Ausführung"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Ableiterklemme St/tZn",
+    "artikelnummer": "319209",
+    "technische_spezifikation": "Klemme für Flach- und Runddrähte, Werkstoff St/tZn",
+    "ausfuehrung_merkmal": "Zur Verbindung Fangleitung/Ableitung"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Verbindungsstück Runddraht",
+    "artikelnummer": "339209",
+    "technische_spezifikation": "Klemmverbinder für Runddraht Ø 8–10 mm, St/tZn",
+    "ausfuehrung_merkmal": "Schraubverbindung"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "HVI Leitung 100 m Trommel",
+    "artikelnummer": "819100",
+    "technische_spezifikation": "Hochspannungsfeste isolierte Ableitung, Länge 100 m",
+    "ausfuehrung_merkmal": "Auf Trommel geliefert"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "HVI Leitung 50 m Trommel",
+    "artikelnummer": "819050",
+    "technische_spezifikation": "Hochspannungsfeste isolierte Ableitung, Länge 50 m",
+    "ausfuehrung_merkmal": "Auf Trommel geliefert"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Dachdurchführung isoliert",
+    "artikelnummer": "105501",
+    "technische_spezifikation": "Isolierte Durchführung für HVI-Leitungen",
+    "ausfuehrung_merkmal": "Für geneigte Dächer"
+  },
+  {
+    "produktlinie": "Blitzschutz/Erdung",
+    "typ_modell": "Trennfunkenstrecke ExFS",
+    "artikelnummer": "923300",
+    "technische_spezifikation": "Ex-geschützte Funkenstrecke für Zone 1, 2, 21, 22",
+    "ausfuehrung_merkmal": "ATEX-zertifiziert"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "APS T AS CL2 SC",
+    "artikelnummer": "785821",
+    "technische_spezifikation": "Polycarbonat, APC 2, WLBP 318 kJ, Lichttransmission 74–100 %",
+    "ausfuehrung_merkmal": "Schutzschirm mit Steckclip, transparent"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "APS T AS 14C SC",
+    "artikelnummer": "785822",
+    "technische_spezifikation": "Polycarbonat, APC 2, ATPV 14 cal/cm², Lichttransmission 43–58 %",
+    "ausfuehrung_merkmal": "Schutzschirm mit Steckclip, hellgrau"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "APS T AS 25C SC",
+    "artikelnummer": "785823",
+    "technische_spezifikation": "Polycarbonat, APC 2, ATPV 25 cal/cm², Lichttransmission 43–58 %",
+    "ausfuehrung_merkmal": "Schutzschirm mit Steckclip, grau"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "APS T AS CL2 FS",
+    "artikelnummer": "785824",
+    "technische_spezifikation": "Polycarbonat, APC 2, WLBP 318 kJ, Lichttransmission 74–100 %",
+    "ausfuehrung_merkmal": "Schutzschirm mit Spannband, transparent"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "APS T AS 14C FS",
+    "artikelnummer": "785825",
+    "technische_spezifikation": "Polycarbonat, APC 2, ATPV 14 cal/cm², Lichttransmission 43–58 %",
+    "ausfuehrung_merkmal": "Schutzschirm mit Spannband, hellgrau"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "APS T AS 25C FS",
+    "artikelnummer": "785826",
+    "technische_spezifikation": "Polycarbonat, APC 2, ATPV 25 cal/cm², Lichttransmission 43–58 %",
+    "ausfuehrung_merkmal": "Schutzschirm mit Spannband, grau"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcap/P-HR",
+    "artikelnummer": "767101",
+    "technische_spezifikation": "Abmessungen 40×48×35 mm, Anzeigeschwelle 90 V, Impedanz 36 MΩ",
+    "ausfuehrung_merkmal": "Spannungsanzeiger (DEHNcap/P)"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "APG XT Größe 7",
+    "artikelnummer": "785830",
+    "technische_spezifikation": "APC 2 150, WLBP 320 kJ, ATPV 40 cal/cm², Stulpen 140 mm, Länge 330 mm",
+    "ausfuehrung_merkmal": "Schutzhandschuh XT Größe 7"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare PSA Overall APC 2 7kA",
+    "artikelnummer": "785911",
+    "technische_spezifikation": "ATPV 8 cal/cm², IEC 61482-1-2 Klasse 2 (7 kA)",
+    "ausfuehrung_merkmal": "Flammhemmender Schutzoverall"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare PSA Overall APC 2 4kA",
+    "artikelnummer": "785912",
+    "technische_spezifikation": "ATPV 8 cal/cm², IEC 61482-1-2 Klasse 1 (4 kA)",
+    "ausfuehrung_merkmal": "Leichter Schutzoverall"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare PSA Jacke APC 2",
+    "artikelnummer": "785921",
+    "technische_spezifikation": "IEC 61482-1-2 Klasse 2, ATPV 25 cal/cm²",
+    "ausfuehrung_merkmal": "Jacke mit Stehkragen"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare PSA Hose APC 2",
+    "artikelnummer": "785922",
+    "technische_spezifikation": "IEC 61482-1-2 Klasse 2, ATPV 25 cal/cm²",
+    "ausfuehrung_merkmal": "Hose mit Gummizug"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare PSA Kapuze APC 2",
+    "artikelnummer": "785931",
+    "technische_spezifikation": "IEC 61482-1-2 Klasse 2, ATPV 25 cal/cm²",
+    "ausfuehrung_merkmal": "Mit Sichtfenster"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare Gehörschutz Kapsel",
+    "artikelnummer": "785951",
+    "technische_spezifikation": "SNR 31 dB, EN 352-1",
+    "ausfuehrung_merkmal": "Anpassbarer Kopfbügel"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare Schutzhandschuh Class 0",
+    "artikelnummer": "785801",
+    "technische_spezifikation": "IEC 60903 Class 0, 1000 V AC",
+    "ausfuehrung_merkmal": "Latex-Isolierhandschuh"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare Schutzhandschuh Class 1",
+    "artikelnummer": "785802",
+    "technische_spezifikation": "IEC 60903 Class 1, 7500 V AC",
+    "ausfuehrung_merkmal": "Latex-Isolierhandschuh"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare Überhandschuh Leder",
+    "artikelnummer": "785803",
+    "technische_spezifikation": "Schutzleder, für Isolierhandschuhe",
+    "ausfuehrung_merkmal": "Verlängerte Stulpe"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare PSA Gesichtsschutzschirm CL2",
+    "artikelnummer": "785841",
+    "technische_spezifikation": "ATPV 8 cal/cm², IEC 61482-1-2 Klasse 2",
+    "ausfuehrung_merkmal": "Klares Visier"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare PSA Gesichtsschutzschirm 14C",
+    "artikelnummer": "785842",
+    "technische_spezifikation": "ATPV 14 cal/cm²",
+    "ausfuehrung_merkmal": "Getöntes Visier"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare PSA Gesichtsschutzschirm 25C",
+    "artikelnummer": "785843",
+    "technische_spezifikation": "ATPV 25 cal/cm²",
+    "ausfuehrung_merkmal": "Getöntes Visier"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcap/P-Universal",
+    "artikelnummer": "767102",
+    "technische_spezifikation": "Anzeigeschwelle 90 V, Impedanz 36 MΩ",
+    "ausfuehrung_merkmal": "Universaladapter"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcap/PE",
+    "artikelnummer": "767103",
+    "technische_spezifikation": "Anzeigeschwelle 90 V, Impedanz 36 MΩ",
+    "ausfuehrung_merkmal": "PE-Ausführung"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNdetect STG",
+    "artikelnummer": "910901",
+    "technische_spezifikation": "Funkempfänger für Lichtbogendetektion",
+    "ausfuehrung_merkmal": "Zur Signalauswertung"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNdetect Sensor",
+    "artikelnummer": "910902",
+    "technische_spezifikation": "Optischer Sensor für Störlichtbögen",
+    "ausfuehrung_merkmal": "Für DEHNdetect-System"
+  },
+  {
+    "produktlinie": "Arbeitsschutz/Störlichtbogenschutz",
+    "typ_modell": "DEHNcare Schutzschirm Ersatzvisier CL2",
+    "artikelnummer": "785861",
+    "technische_spezifikation": "Ersatzvisier, klar, für APS T AS CL2",
+    "ausfuehrung_merkmal": "Polycarbonat"
+  }
+]
+

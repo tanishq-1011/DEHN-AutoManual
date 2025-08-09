@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DehnWise • Chat</title>
+  <meta name="description" content="DehnWise – mobiles Chat-Frontend im DEHN-Look." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23E3000B' d='M0 52 L64 39 L64 64 L0 64 Z'/%3E%3C/svg%3E">
+  <style>
+    @font-face {
+      font-display: swap;
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: url('https://cdn.dehn.cloud/shared/fonts/noto-sans/v36/noto-sans-latin-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-display: swap;
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      src: url('https://cdn.dehn.cloud/shared/fonts/noto-sans/v36/noto-sans-latin-700.woff2') format('woff2');
+    }
+
+    :root{--red:#E3000B;--bg:#F9F8F6;--white:#fff;--fg:#5B5B5D;--dark:#1F1F1E;--border:#E2E6E8;--r:14px}
+    html,body{height:100%}
+    body{margin:0;font:400 16px/1.5 'Noto Sans',sans-serif;color:var(--fg);background:var(--bg);text-align:justify}
+
+    .slant-header{position:sticky;top:0;z-index:50;background:var(--white)}
+    .slant-header::before{content:"";display:block;height:48px;background:var(--red);transform:skewY(-13deg);transform-origin:left top;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;max-width:1120px;margin:-16px auto 0}
+    .brand{display:flex;align-items:center;gap:10px;color:var(--dark);font-weight:700;font-size:20px}
+    .brand-badge{padding:2px 8px;background:var(--red);color:var(--white);transform:skewX(-13deg);border-radius:6px}
+    .brand-badge span{display:inline-block;transform:skewX(13deg)}
+    .actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .icon-btn{border:1px solid var(--border);background:var(--white);border-radius:10px;padding:8px;line-height:0;cursor:pointer}
+    .icon-btn:focus-visible{outline:2px solid #FEBC39;outline-offset:2px}
+
+    /* === DEVICE SEARCH === */
+    .device-search-wrap{position:relative;display:none;max-width:420px;width:min(90vw,420px)}
+    .device-search-wrap.active{display:block}
+    .device-search{display:flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--white);border-radius:10px;padding:8px 10px}
+    .device-search input{border:0;outline:0;width:100%;font:inherit;color:var(--dark);background:transparent}
+    .device-results{position:absolute;top:100%;left:0;right:0;background:var(--white);border:1px solid var(--border);border-top:none;border-radius:0 0 12px 12px;box-shadow:0 8px 24px rgba(0,0,0,.08);max-height:320px;overflow:auto}
+    .device-result{padding:10px 12px;cursor:pointer;display:flex;gap:8px;align-items:flex-start}
+    .device-result[aria-selected="true"], .device-result:hover{background:#FFF4F5}
+    .device-tag{font-size:12px;background:#F3F4F6;border:1px solid var(--border);border-radius:999px;padding:2px 6px;white-space:nowrap;color:#444}
+    .device-meta{font-size:12px;color:#6b7280}
+    .device-empty{padding:10px 12px;color:#6b7280}
+    .device-search-hint{font-size:12px;color:#6b7280;margin-top:4px}
+
+    /* === SELECTED DEVICE BADGE === */
+    .selected-device{display:none;align-items:center;gap:8px;border:1px solid var(--border);background:var(--white);border-radius:999px;padding:6px 10px;max-width:360px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .selected-device.active{display:flex}
+    .selected-device .sd-line{font-size:12px;background:#F3F4F6;border:1px solid var(--border);border-radius:999px;padding:2px 6px;color:#444}
+    .selected-device .sd-text{font-size:14px;color:var(--dark);overflow:hidden;text-overflow:ellipsis}
+    .selected-device .sd-clear{border:0;background:transparent;cursor:pointer;line-height:0;color:#888}
+    .selected-device .sd-clear:focus-visible{outline:2px solid #FEBC39;outline-offset:2px}
+    @media (max-width:480px){.selected-device{max-width:200px}}
+
+    .wrap{max-width:1120px;margin:0 auto;padding:12px 12px 96px}
+
+    .hero{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:0 2px 10px rgba(0,0,0,.06);margin:8px 0 12px}
+    .hero h1{margin:0 0 8px;color:var(--dark);font-size:22px;text-align:left}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .chip{border:1px solid var(--border);background:var(--white);border-radius:999px;padding:8px 12px;font-size:14px;cursor:pointer}
+
+    .chat{display:grid;gap:8px}
+    .msg{display:inline-flex;max-width:85ch;padding:10px 12px;border-radius:var(--r);border:1px solid var(--border);background:var(--white);box-shadow:0 2px 10px rgba(0,0,0,.06);white-space:pre-wrap;word-wrap:break-word;text-align:justify}
+    .msg.bot{border-left:4px solid var(--red)}
+    .msg.user{margin-left:auto;background:#FFE5E7;border-color:#F2B5B8}
+    .msg .label{display:block;font-size:42px;color:#30414F;margin-bottom:4px;text-align:left}
+
+    .typing{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:#30414F}
+    .typing .dot{width:6px;height:6px;border-radius:50%;background:var(--red);opacity:.5;animation:b 1s infinite ease-in-out}
+    .typing .dot:nth-child(2){animation-delay:.15s}.typing .dot:nth-child(3){animation-delay:.3s}
+    @keyframes b{0%,80%,100%{transform:translateY(0)}40%{transform:translateY(-4px)}}
+
+    .composer{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--white);border-top:1px solid var(--border);box-shadow:0 -6px 24px rgba(0,0,0,.06)}
+    .composer-inner{max-width:1120px;margin:0 auto;padding:10px 12px;display:grid;grid-template-columns:1fr auto;gap:8px}
+    .input{display:flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--white);border-radius:var(--r);padding:10px 12px}
+    .input input{border:0;outline:0;width:100%;font:inherit;color:var(--dark);background:transparent}
+    .input input::placeholder{color:#8A8E93}
+    .btn-primary{cursor:pointer;border:0;border-radius:12px;padding:10px 14px;background:var(--red);color:var(--white);font-weight:700}
+    .btn-primary:disabled{opacity:.6}
+    .btn-primary:focus-visible{outline:2px solid #FEBC39;outline-offset:2px}
+
+    @media (min-width:768px){
+      .wrap{padding:16px 16px 108px}
+      .hero{padding:20px}
+      .topbar{padding:16px 24px}
+      .slant-header::before{height:56px}
+      .device-search-wrap{max-width:520px}
+    }
+  </style>
+</head>
+<body>
+  <header class="slant-header">
+    <div class="topbar">
+      <div class="brand"><span class="brand-badge"><span>DEHN</span></span><span color="red">Wise</span></div>
+
+      <div class="actions">
+        <!-- Language selector -->
+        <select id="langSelect" title="Sprache wählen / Choose language" style="border:1px solid var(--border);border-radius:8px;padding:6px 8px;font:inherit;color:var(--dark);background:var(--white)">
+          <option value="de" selected>Deutsch 🇩🇪</option>
+          <option value="en">English 🇬🇧</option>
+        </select>
+
+        <!-- Device search toggle -->
+        <button class="icon-btn" id="toggleDeviceSearch" aria-expanded="false" aria-controls="deviceSearchRegion" title="Geräte-Auswahl öffnen/schließen">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"/></svg>
+        </button>
+
+        <!-- Device search combobox -->
+        <div class="device-search-wrap" id="deviceSearchRegion">
+          <div class="device-search" role="combobox" aria-haspopup="listbox" aria-owns="deviceResults" aria-expanded="false">
+            <input id="deviceInput" type="text" placeholder="Gerät suchen (Modell, Artikelnr., Produktlinie)…" autocomplete="off" aria-autocomplete="list" aria-controls="deviceResults" aria-activedescendant="">
+          </div>
+          <div class="device-results" id="deviceResults" role="listbox" hidden></div>
+          <div class="device-search-hint" id="deviceHint" hidden>Tippe mindestens 2 Zeichen …</div>
+        </div>
+
+        <!-- Selected device badge -->
+        <div id="selectedDevice" class="selected-device" title="Kein Gerät gewählt" aria-live="polite">
+          <span class="sd-line" id="sdLine">—</span>
+          <span class="sd-text" id="sdText">Kein Gerät gewählt</span>
+          <button class="sd-clear" id="sdClear" aria-label="Auswahl löschen" title="Auswahl löschen">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M18.3 5.7a1 1 0 0 0-1.4-1.4L12 9.17 7.1 4.3a1 1 0 1 0-1.4 1.4L10.83 12l-5.13 4.9a1 1 0 0 0 1.4 1.45L12 14.83l4.9 4.9a1 1 0 0 0 1.4-1.42L13.17 12 18.3 6.87z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Willkommen bei <strong>DehnWise</strong></h1>
+      <p>Stellen Sie Ihre Fragen zu Produkten, Normen, Blitz- und Überspannungsschutz oder lassen Sie sich Inhalte von dehn.de strukturiert zusammenfassen.</p>
+      <div class="chips" id="chips">
+        <button class="chip" data-prompt="Was ist der Unterschied zwischen Blitz- und Überspannungsschutz?">Unterschied Blitz/ÜS</button>
+        <button class="chip" data-prompt="Welche Lösungen bietet DEHN für PV-Anlagen?">PV-Lösungen</button>
+        <button class="chip" data-prompt="Gibt es Richtlinien nach IEC 62305?">IEC 62305</button>
+        <button class="chip" data-prompt="Erstellen Sie eine Stückliste für ein Industriegebäude.">Stückliste</button>
+      </div>
+    </section>
+
+    <section class="chat" id="chat">
+      <div class="msg bot">
+        <span class="label">🧙</span>
+        Willkommen! Wie kann ich Sie unterstützen?
+      </div>
+    </section>
+  </main>
+
+  <footer class="composer">
+    <div class="composer-inner">
+      <div class="input">
+        <input id="prompt" type="text" placeholder="Ihre Nachricht an DehnWise…" autocomplete="off" />
+      </div>
+      <button class="btn-primary" id="send">Senden</button>
+    </div>
+  </footer>
+
+  <script>
+    const chat=document.getElementById('chat'),promptEl=document.getElementById('prompt'),sendBtn=document.getElementById('send');
+    const API_URL = "http://127.0.0.1:3456/api/chat";
+    const DEVICES_URL = "http://127.0.0.1:3456/api/devices";
+
+    // === I18N ===
+    const I18N = {
+      de: {
+        appTitle: "DehnWise • Chat",
+        heroTitle: "Willkommen bei DehnWise",
+        heroDesc: "Stellen Sie Ihre Fragen zu Produkten, Normen, Blitz- und Überspannungsschutz oder lassen Sie sich Inhalte von dehn.de strukturiert zusammenfassen.",
+        chips: { diff: "Unterschied Blitz/ÜS", pv: "PV-Lösungen", iec: "IEC 62305", bom: "Stückliste" },
+        placeholders: {
+          searchDevice: "Gerät suchen (Modell, Artikelnr., Produktlinie)…",
+          chat: "Ihre Nachricht an DehnWise…",
+          searchHint: "Tippe mindestens 2 Zeichen …"
+        },
+        btnSend: "Senden",
+        botWelcome: "Willkommen! Wie kann ich Sie unterstützen?",
+        devicePickedPrefix: "Gerät ausgewählt",
+        noAnswer: "Keine Antwort erhalten.",
+        problem: "Es gab ein Problem. Bitte versuchen Sie es erneut.",
+        devLoadOk: (n) => `Gerätedaten geladen (${n})`,
+        devLoadFail: "Konnte Daten nicht laden."
+      },
+      en: {
+        appTitle: "DehnWise • Chat",
+        heroTitle: "Welcome to DehnWise",
+        heroDesc: "Ask questions about products, standards, lightning and surge protection, or get structured summaries from dehn.de.",
+        chips: { diff: "Lightning vs. surge", pv: "PV solutions", iec: "IEC 62305", bom: "Bill of materials" },
+        placeholders: {
+          searchDevice: "Search device (model, article no., product line)…",
+          chat: "Your message to DehnWise…",
+          searchHint: "Type at least 2 characters …"
+        },
+        btnSend: "Send",
+        botWelcome: "Welcome! How can I help?",
+        devicePickedPrefix: "Device selected",
+        noAnswer: "No answer received.",
+        problem: "Something went wrong. Please try again.",
+        devLoadOk: (n) => `Loaded device data (${n})`,
+        devLoadFail: "Could not load data."
+      }
+    };
+
+    const langSelect = document.getElementById('langSelect');
+    let currentLang = 'de';
+    try {
+      const savedLang = localStorage.getItem('chatLang');
+      if (savedLang && (savedLang === 'de' || savedLang === 'en')) {
+        currentLang = savedLang; if (langSelect) langSelect.value = savedLang;
+      } else if (langSelect) { currentLang = langSelect.value; }
+    } catch {}
+    function applyLocale() {
+      const t = I18N[currentLang];
+      document.documentElement.lang = currentLang;
+      document.title = t.appTitle;
+      const heroH1 = document.querySelector('.hero h1'); if (heroH1) heroH1.innerHTML = t.heroTitle.replace('DehnWise','<strong>DehnWise</strong>');
+      const heroP = document.querySelector('.hero p'); if (heroP) heroP.textContent = t.heroDesc;
+      const chipsEl = document.getElementById('chips');
+      if (chipsEl) {
+        const [c1,c2,c3,c4] = chipsEl.querySelectorAll('.chip');
+        if (c1) c1.textContent = t.chips.diff;
+        if (c2) c2.textContent = t.chips.pv;
+        if (c3) c3.textContent = t.chips.iec;
+        if (c4) c4.textContent = t.chips.bom;
+      }
+      const deviceInput = document.getElementById('deviceInput'); if (deviceInput) deviceInput.placeholder = t.placeholders.searchDevice;
+      if (promptEl) promptEl.placeholder = t.placeholders.chat;
+      const hintEl = document.getElementById('deviceHint'); if (hintEl) hintEl.textContent = t.placeholders.searchHint;
+      const sendBtn = document.getElementById('send'); if (sendBtn) sendBtn.textContent = t.btnSend;
+      const firstBot = document.querySelector('.chat .msg.bot'); if (firstBot) {
+        const label = firstBot.querySelector('.label');
+        if (label) { firstBot.innerHTML=''; firstBot.appendChild(label); firstBot.appendChild(document.createTextNode(' ' + t.botWelcome)); }
+      }
+    }
+    applyLocale();
+    if (langSelect) {
+      langSelect.addEventListener('change', () => {
+        currentLang = langSelect.value;
+        try { localStorage.setItem('chatLang', currentLang); } catch {}
+        applyLocale();
+      });
+    }
+
+    // Chat helpers
+    function scrollToBottom(smooth = true) {
+      requestAnimationFrame(() => {
+        const el = document.scrollingElement || document.documentElement;
+        window.scrollTo({ top: el.scrollHeight, behavior: smooth ? 'smooth' : 'auto' });
+      });
+    }
+    const observer = new MutationObserver(()=>scrollToBottom());
+    observer.observe(chat,{ childList:true });
+    const addMsg=(t,w='user')=>{const b=document.createElement('div');b.className=`msg ${w}`;if(w==='bot'){const l=document.createElement('span');l.className='label';l.textContent='🧙';b.appendChild(l);}b.appendChild(document.createTextNode(t));chat.appendChild(b);scrollToBottom();};
+    const addTyping=()=>{const r=document.createElement('div');r.className='msg bot';r.dataset.typing='';const l=document.createElement('span');l.className='label';l.textContent='🧙';r.appendChild(l);const t=document.createElement('div');t.className='typing';t.innerHTML='<span class="dot"></span><span class="dot"></span><span class="dot"></span>';r.appendChild(t);chat.appendChild(r);scrollToBottom();return r;};
+    let selectedDevice = null;
+
+    async function sendPrompt(txt){
+      if(!txt.trim())return;
+      addMsg(txt,'user'); promptEl.value='';
+      const ty=addTyping();
+      try{
+        const payload = {
+          message: txt,
+          language: currentLang,
+          device: selectedDevice ? {
+            produktlinie: selectedDevice.produktlinie,
+            typ_modell: selectedDevice.typ_modell,
+            artikelnummer: selectedDevice.artikelnummer,
+            technische_spezifikation: selectedDevice.technische_spezifikation,
+            ausfuehrung_merkmal: selectedDevice.ausfuehrung_merkmal
+          } : null
+        };
+        const res = await fetch(API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+        if(!res.ok) throw new Error('Fehler '+res.status);
+        const data=await res.json();
+        ty.remove();
+        addMsg(data.reply||I18N[currentLang].noAnswer,'bot');
+      }catch(e){
+        ty.remove();
+        addMsg(I18N[currentLang].problem,'bot');
+      }
+    }
+    sendBtn.addEventListener('click',()=>sendPrompt(promptEl.value));
+    promptEl.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendPrompt(promptEl.value);}});
+    document.getElementById('chips').addEventListener('click',e=>{if(e.target.matches('[data-prompt]'))sendPrompt(e.target.dataset.prompt);});
+
+    // === DEVICE SEARCH logic ===
+    const toggleBtn = document.getElementById('toggleDeviceSearch');
+    const searchRegion = document.getElementById('deviceSearchRegion');
+    const searchBox = searchRegion.querySelector('.device-search');
+    const inputEl = document.getElementById('deviceInput');
+    const resultsEl = document.getElementById('deviceResults');
+    const hintEl = document.getElementById('deviceHint');
+
+    const selWrap = document.getElementById('selectedDevice');
+    const sdLine  = document.getElementById('sdLine');
+    const sdText  = document.getElementById('sdText');
+    const sdClear = document.getElementById('sdClear');
+
+    let devices = [];
+    let visible = false;
+    let activeIndex = -1;
+    let lastQuery = "";
+    const MAX_RESULTS = 8;
+
+    toggleBtn.addEventListener('click', async () => {
+      visible = !visible;
+      toggleBtn.setAttribute('aria-expanded', String(visible));
+      searchRegion.classList.toggle('active', visible);
+      if (!visible) { clearResults(); return; }
+      inputEl.focus();
+      if (!devices.length) {
+        try {
+          const res = await fetch(DEVICES_URL, { cache: 'no-store' });
+          if (!res.ok) throw new Error('Konnte /api/devices nicht laden');
+          devices = await res.json();
+          addMsg(I18N[currentLang].devLoadOk(devices.length), 'bot');
+        } catch (e) {
+          showEmpty(I18N[currentLang].devLoadFail);
+          console.error(e);
+          addMsg(I18N[currentLang].devLoadFail, 'bot');
+        }
+      }
+    });
+
+    // selected device render/persist
+    function renderSelectedDevice(d) {
+      if (!d) {
+        selectedDevice = null;
+        selWrap.classList.remove('active');
+        sdLine.textContent = '—';
+        sdText.textContent = currentLang === 'de' ? 'Kein Gerät gewählt' : 'No device selected';
+        selWrap.title = sdText.textContent;
+        try { localStorage.removeItem('selectedDevice'); } catch {}
+        return;
+      }
+      selectedDevice = d;
+      const line  = d.produktlinie || '—';
+      const label = `${d.typ_modell || 'Unbekannt'} · Art.-Nr. ${d.artikelnummer || '—'}`;
+      sdLine.textContent = line;
+      sdText.textContent = label;
+      selWrap.title = `${label}${d.technische_spezifikation ? ' — ' + d.technische_spezifikation : ''}`;
+      selWrap.classList.add('active');
+      try { localStorage.setItem('selectedDevice', JSON.stringify(d)); } catch {}
+    }
+    sdClear.addEventListener('click', () => {
+      renderSelectedDevice(null);
+      document.dispatchEvent(new CustomEvent('device:cleared'));
+    });
+    // restore on load
+    try {
+      const saved = localStorage.getItem('selectedDevice');
+      if (saved) {
+        const d = JSON.parse(saved);
+        renderSelectedDevice(d);
+      }
+    } catch {}
+
+    // debounce search
+    let t;
+    inputEl.addEventListener('input', () => {
+      const q = inputEl.value.trim();
+      if (t) clearTimeout(t);
+      t = setTimeout(() => performSearch(q), 150);
+    });
+
+    function performSearch(query) {
+      lastQuery = query;
+      activeIndex = -1;
+      if (!query || query.length < 2) {
+        resultsEl.hidden = true;
+        hintEl.hidden = false;
+        searchBox.setAttribute('aria-expanded', 'false');
+        resultsEl.innerHTML = '';
+        return;
+      }
+      hintEl.hidden = true;
+
+      const q = normalize(query);
+      const scored = devices.map((d, idx) => {
+        const model = String(d.typ_modell || '');
+        const sku = String(d.artikelnummer || '');
+        const line = String(d.produktlinie || '');
+        const hay = normalize(model + ' ' + sku + ' ' + line);
+        let score = 0;
+        if (hay.includes(q)) score += 10;
+        if (normalize(model).includes(q)) score += 6;
+        if (normalize(sku).includes(q)) score += 5;
+        if (normalize(line).includes(q)) score += 3;
+        if (wordStartMatch(hay, q)) score += 4;
+        return { d, score, idx };
+      }).filter(x => x.score > 0)
+        .sort((a,b)=>b.score-a.score)
+        .slice(0, MAX_RESULTS);
+
+      renderResults(scored.map(s => s.d));
+    }
+
+    function normalize(s){return s.toLowerCase().normalize('NFKD').replace(/\p{Diacritic}/gu,'');}
+    function wordStartMatch(hay, q) { return new RegExp(`(?:^|\\s)${escapeReg(q)}`).test(hay); }
+    function escapeReg(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+
+    function renderResults(list){
+      resultsEl.innerHTML = '';
+      if (!list.length) { showEmpty(currentLang==='de'?'Keine Treffer.':'No results.'); return; }
+      list.forEach((d, i) => {
+        const item = document.createElement('div');
+        item.id = `device-opt-${i}`;
+        item.className = 'device-result';
+        item.setAttribute('role','option');
+        item.setAttribute('aria-selected','false');
+        item.innerHTML = `
+          <div class="device-tag">${escapeHtml(d.produktlinie||'–')}</div>
+          <div>
+            <div><strong>${escapeHtml(d.typ_modell||'Unbekannt')}</strong></div>
+            <div class="device-meta">${currentLang==='de'?'Art.-Nr.':'Article'} ${escapeHtml(d.artikelnummer||'–')}</div>
+            <div class="device-meta">${escapeHtml(d.technische_spezifikation||'')}</div>
+          </div>
+        `;
+        item.addEventListener('mousedown', (e) => {
+          e.preventDefault();
+          selectDevice(d);
+        });
+        resultsEl.appendChild(item);
+      });
+      resultsEl.hidden = false;
+      searchBox.setAttribute('aria-expanded','true');
+    }
+
+    function showEmpty(txt){
+      resultsEl.innerHTML = `<div class="device-empty">${escapeHtml(txt)}</div>`;
+      resultsEl.hidden = false;
+      searchBox.setAttribute('aria-expanded','true');
+    }
+    function clearResults(){
+      resultsEl.innerHTML = '';
+      resultsEl.hidden = true;
+      searchBox.setAttribute('aria-expanded','false');
+    }
+
+    inputEl.addEventListener('keydown', (e) => {
+      const items = [...resultsEl.querySelectorAll('.device-result')];
+      const max = items.length - 1;
+      if (e.key === 'ArrowDown' && items.length) {
+        e.preventDefault();
+        activeIndex = Math.min(max, activeIndex + 1);
+        updateActive(items);
+      } else if (e.key === 'ArrowUp' && items.length) {
+        e.preventDefault();
+        activeIndex = Math.max(0, activeIndex - 1);
+        updateActive(items);
+      } else if (e.key === 'Enter') {
+        if (activeIndex >= 0 && items[activeIndex]) {
+          e.preventDefault();
+          items[activeIndex].dispatchEvent(new Event('mousedown'));
+        }
+      } else if (e.key === 'Escape') {
+        clearResults();
+        inputEl.select();
+      }
+    });
+
+    function updateActive(items){
+      items.forEach(el=>el.setAttribute('aria-selected','false'));
+      if (activeIndex >= 0 && items[activeIndex]) {
+        const el = items[activeIndex];
+        el.setAttribute('aria-selected','true');
+        inputEl.setAttribute('aria-activedescendant', el.id);
+        const r = el.getBoundingClientRect();
+        const rr = resultsEl.getBoundingClientRect();
+        if (r.bottom > rr.bottom) el.scrollIntoView({ block:'nearest' });
+        if (r.top < rr.top) el.scrollIntoView({ block:'nearest' });
+      } else {
+        inputEl.setAttribute('aria-activedescendant','');
+      }
+    }
+
+    function selectDevice(d) {
+      clearResults();
+      const desc = `${d.typ_modell || 'Unbekannt'} (${currentLang==='de'?'Art.-Nr.':'Article'} ${d.artikelnummer||'–'}, ${d.produktlinie||'–'})`;
+      inputEl.value = d.typ_modell || d.artikelnummer || '';
+      promptEl.value = currentLang==='de'
+        ? `Bitte analysiere das Gerät "${d.typ_modell}" (Art.-Nr. ${d.artikelnummer}). Nenne Kerndaten, Normenbezüge und kompatibles Zubehör.`
+        : `Please analyze the device "${d.typ_modell}" (Article ${d.artikelnummer}). Provide key specs, standards and compatible accessories.`;
+
+      document.dispatchEvent(new CustomEvent('device:selected', { detail: d }));
+      renderSelectedDevice(d);
+
+      addMsg(`${I18N[currentLang].devicePickedPrefix}: ${desc}\n${d.technische_spezifikation||''}`, 'bot');
+      scrollToBottom();
+    }
+
+    inputEl.addEventListener('blur', () => setTimeout(() => clearResults(), 120));
+    function escapeHtml(str=''){return String(str).replace(/[&<>"']/g, s=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[s]));}
+  </script>
+</body>
+</html>

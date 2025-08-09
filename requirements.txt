@@ -3,3 +3,8 @@ python-dotenv
 requests
 groq
 openai
+fitz
+deepl
+pymupdf
+streamlit
+PyQt6

@@ -1,0 +1,61 @@
+import fitz
+import deepl
+import os
+from dotenv import load_dotenv
+import streamlit as st
+from PIL import Image
+import io
+
+load_dotenv()
+
+pdf_path = os.getenv("DOCUMENT_PATH")
+output_path = os.getenv("TRANSLATED_DOCUMENT_PATH")
+auth_key = os.getenv("DEEPL_KEY")
+translator = deepl.Translator(auth_key)
+
+# Step 1: Extract PDF page as image + bounding boxes
+doc = fitz.open(pdf_path)
+page = doc[0]  # just first page for demo
+
+blocks = page.get_text("blocks")
+bbox_texts = []
+for block in blocks:
+    x0, y0, x1, y1, text, *_ = block
+    if text.strip():
+        result = translator.translate_text(text, target_lang="EN-GB")
+        bbox_texts.append({
+            "rect": (x0, y0, x1, y1),
+            "original": text.strip(),
+            "translation": result.text
+        })
+
+# Render PDF page as image
+pix = page.get_pixmap()
+img = Image.open(io.BytesIO(pix.tobytes("png")))
+
+# Step 2: UI
+st.title("PDF Translation Editor")
+st.image(img, caption="Page Preview")
+
+updated_texts = []
+for i, item in enumerate(bbox_texts):
+    new_text = st.text_area(
+        f"Block {i+1} ({item['rect']})",
+        value=item['translation'],
+        height=80
+    )
+    updated_texts.append((item["rect"], new_text))
+
+# Step 3: Save
+if st.button("Save PDF"):
+    for rect, text in updated_texts:
+        page.add_redact_annot(fitz.Rect(rect), fill=(1, 1, 1))
+    page.apply_redactions()
+
+    for rect, text in updated_texts:
+        # page.insert_textbox(fitz.Rect(rect), text, fontsize=6, fontname="helv", align=0)
+        x0, y0, x1, y1 = rect
+        page.insert_text((x0, y0), text, fontsize=6, fontname="helv")
+
+    doc.save(output_path)
+    st.success(f"PDF saved to {output_path}")
