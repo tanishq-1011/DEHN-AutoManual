@@ -4,9 +4,13 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
 from openai import OpenAI
 import json
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 
-open_router_key = ""
+open_router_key = os.getenv("OPENROUTER_KEY")
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
   api_key=open_router_key,  # Replace with your OpenRouter API key
