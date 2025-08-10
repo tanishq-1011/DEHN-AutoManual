@@ -40,7 +40,18 @@ app.post("/api/chat", async (req, res) => {
   console.log("Empfangene Nachricht:", req.body.message);
   try {
     const filePath = path.join(__dirname, "groq_response Bilingual.txt");
-    const content = await fs.readFile(filePath, "utf-8");
+    let content = await fs.readFile(filePath, "utf-8");
+
+    // Replace last two Google Drive links with markdown hyperlinks labeled 'Link1' and 'Link2' (clickable)
+    const linkRegex = /https:\/\/drive\.google\.com\/file\/d\/[^\s]+/g;
+    const links = [...content.matchAll(linkRegex)];
+    if (links.length >= 2) {
+      // Only replace the last two links
+      const lastTwo = links.slice(-2);
+      content = content.replace(lastTwo[0][0], `[Link1](${lastTwo[0][0]})`);
+      content = content.replace(lastTwo[1][0], `[Link2](${lastTwo[1][0]})`);
+    }
+
     await new Promise((resolve) => setTimeout(resolve, 3000));
     res.json({ reply: content });
   } catch (err) {

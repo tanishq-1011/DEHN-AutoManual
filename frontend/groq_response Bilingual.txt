@@ -27,3 +27,7 @@ Diese Schritte bestätigen, dass das Gerät korrekt versorgt, die Spannungsquali
 These steps verify that the unit is powered correctly, is monitoring voltage quality, and that communication with the web server/cloud is operational.
 
 Diese Informationen stammen aus Abschnitt mit ID 19 („English Version: Commissioning and Product Registration“), im Teil Testing.
+
+**References**
+https://drive.google.com/file/d/199_id2IgbrczpvBwOV7AZV0sR4mmugVH/view?usp=sharing
+https://drive.google.com/file/d/1EH4XKq78wgY6jlNHy_6leKSoNUvZV3kI/view?usp=sharing
