@@ -25,3 +25,5 @@ Diese Schritte bestätigen, dass das Gerät korrekt versorgt, die Spannungsquali
 6. If the connection to DEHNmonitor PQ succeeds, LED 1 stays green permanently.  
 
 These steps verify that the unit is powered correctly, is monitoring voltage quality, and that communication with the web server/cloud is operational.
+
+Diese Informationen stammen aus Abschnitt mit ID 19 („English Version: Commissioning and Product Registration“), im Teil Testing.

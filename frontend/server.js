@@ -39,7 +39,7 @@ app.get("/api/devices", async (req, res) => {
 app.post("/api/chat", async (req, res) => {
   console.log("Empfangene Nachricht:", req.body.message);
   try {
-    const filePath = path.join(__dirname, "../groq_response Bilingual.txt");
+    const filePath = path.join(__dirname, "groq_response Bilingual.txt");
     const content = await fs.readFile(filePath, "utf-8");
     await new Promise((resolve) => setTimeout(resolve, 3000));
     res.json({ reply: content });

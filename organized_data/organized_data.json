@@ -1,0 +1,124 @@
+{
+  "sections": [
+    {
+      "id": 1,
+      "title": "Product Overview and Manufacturer Information",
+      "content": "DEHNrecord SD\nMultifunktionales Mess- und Analysegerät zur Überwachung der Spannungsqualität\nEinbauanleitung\nDEHN SE\nÜberspannungsschutz\nBlitzschutz/Erdung\nArbeitsschutz\nDEHN schützt.\nHans-Dehn-Str. 1\nPostfach 1640\n92306 Neumarkt\nGermany\nTel. +49 9181 906-0\nwww.dehn-international.com\nPublication No. 2084 / Update 01.23     Mat. No. 3015951\n© Copyright 2023 DEHN SE",
+      "related_imgs":[]
+    },
+    {
+      "id": 2,
+      "title": "Safety and Configuration Warning",
+      "content": "Sicherheit\nKonfiguration\nWARNUNG\nGefahr durch Stromschlag\nMontage und Anschuss eines DEHN record SD darf nur durch eine Elektrofachkraft gemäß den Installationsnormen des Landes erfolgen!\nIEC 60417-6182:\nInstallation, electrotechnical expertise",
+      "related_imgs":[]
+    },
+    {
+      "id": 3,
+      "title": "Device Specification and Features",
+      "content": "Leistungsbeschreibung\nDas DEHNrecord SD ist ein hutschienenmontierbares Mess- und Analysegerät für:\nSpannungsqualität nach EN61000-4-30, Klasse A\nDie Analyse erfolgt nach EN50160 und individuellen Vorgaben.\nImpulsströme\nÜber einen externen Sensor können Stoßstromimpulse erfasst und ausgewertet werden.\nStrom, Leistung, Energie\nÜber bis zu 4 Stromsensoren können Last- u. Nullleiterströme gemessen und daraus die entsprechenden Leistungs- und Energiewerte ermittelt werden.\nNetzfrequente Überspannungen nach EN50550 werden erkannt und es kann eine Abschaltinformation für eine externe Hauptschutzeinrichtung gesetzt werden.\nDigitale Ein- und Ausgänge\nEingänge können auf Zustandsänderungen überwacht und logisch verknüpft werden (z.B. SPD-Überwachung).\nAusgänge können nutzerspezifisch den internen Funktionen zugeordnet werden.\nWebserver\nDie Grundeinstellungen können über den internen Webserver eingegeben werden: Standort, Netzwerkeinstellungen, Zuordnung und Typ der externen Spulen/Wandler zur Strommessung, uvm. Der Zugriff auf den Webserver ist unter „Inbetriebnahme“ erklärt.\nModbus TCP\nDer Gerätezugriff per Ethernet-Schnittstelle ermöglicht den Zugriff auf Parameter, Grenzwerte, aktuelle, zyklische Daten/Stati und Ereignisdaten.\nDEHNmonitor PQ (Cloud von DEHN)\nKonfiguration des DEHN record SD und Zugriff auf die aktuellen, zyklischen und zurückliegenden Daten/Stati/Ereignisdaten inkl. Detailverläufe.",
+      "related_imgs":[]
+    },
+    {
+      "id": 4,
+      "title": "Delivery and Disposal",
+      "content": "Lieferumfang\nGerät (inkl. Steckverbinder IO und Steckverbinder CM)\nEinbauanleitung\nZubehör (optional)\nImpulsstromsensor\nStromsensoren (Klappstromwandler, Rogowski-Spulen)\nKammschienen (passend zum Überspannungsschutzgerät)\nEntsorgung\nDas Gerät darf nicht über den Hausmüll entsorgt werden! Weiterführende Informationen entnehmen Sie unserer Homepage: www.dehn.de",
+      "related_imgs":[]
+    },
+    {
+      "id": 5,
+      "title": "Device Description and Connections",
+      "content": "Gerätebeschreibung\nAnschlussquerschnitt L1/L2/L3/N:\n1,5 - 6 mm² fein-/mehrdrähtig\n1,5 - 10 mm² eindrähtig\nAbisolierlänge: 16 mm\nPZ 2\n4 Nm\nL1\nL2\nL3 N/PEN\nLED 1 (Device)\nLED 2 (Status)\nTaste 1 (Option)\nTaste 2 (Basic)\nEthernet\nAnschluss IO\nAnschluss CM\nBezeichnung\nFunktion\nL1\nMesseingang und Spannungsversorgung bei Modell DRC SD 1 ...\n(L1), L2, L3, N/PEN Messeingang\nLED 1 (Device)\nLED 2 (Status)\nTaste 1 (Option)\nTaste 2 (Basic)\nEthernet\ngrün (blinken):   Start\ngrün (leuchten):  Cloudverbindung aktiv\nblau:\nWebserver aktiv\ngelb:\nAktion 1 aktiv\nAktion 2 aktiv\nrot:\n(RGB-LED, aktive Statusmeldungen werden nacheinander angezeigt)\nleuchtet grün: Spannungsqualität ok (in Werkseinstellung, RGB-LED, kann weiteren Gerätefunktionen zugeordnet werden)\nkurz (< 1 s): Aktion 1: schnelle Datenübermittlung starten\nlang (> 5 s): Aktion 2: Geräte Stopp/Start\nlang (> 10 s): Zurücksetzen auf Werkseinstellungen\nkurz (< 1 s): Webserver aktivieren\nlang (> 5 s): Geräte-Reset auslösen\nNetzwerkverbindung:\nVerbindung zu internem Webserver, Modbus TCP, Cloud\nAnschlüsse für Impulsstromsensor, Spannungsversorgung int./ext., Digitale Ein- und Ausgänge\nAchtung! Der Anschluss der Stromsensoren am Gerät muss vor der Montage am Stromleiter erfolgen!\nAnschluss IO\nZur Entriegelung der Push-In-Anschlüsse wird ein Schlitz-Schraubendreher ≤ 2,5 mm Breite benötigt.\nAnschluss CM\nAnschlüsse für Stromsensoren",
+      "related_imgs":[1]
+    },
+    {
+      "id": 6,
+      "title": "Device Description (Connectors)",
+      "content": "Gerätebeschreibung (Stecker)\nAnschluss IO (Input, Output, Versorgung, Impulsspule)\nBezeichnung\nKlemme\nImpulsstromsensor\nImp2\n2\n1\nImp1\nVersion 24 Volt (Modell DRC SD 2 ...)\nExt. Spannungsversorgung +24 V\nVersion 230 Volt (Modell DRC SD 1 ...)\nHilfsspannung, Ausgang +12 V, ausschließlich für den Betrieb der potentialfreien digitalen Eingänge\nUe-\n4\n3\nUe+\n(+24 Vin)\nUe+\n(+12 Vout)\nLeitungslänge maximal 30 m\n–     Polarität beachten!    +\nInput 1: max. 30 VDC\nInput 2: max. 30 VDC\nInput 3: max. 30 VDC\nI1.2\nI2.2\nI3.2\n6\n8\n10\n5\n7\n9\nI1.1\nI2.1\nI3.1\nLeitungslänge maximal 30 m\nPolarität beliebig\nOutput 1 (potentialfreier Kontakt)\nmax. 30 V, max. 500 mA\nOutput 2 (potentialfreier Kontakt)\nmax. 30 V, max. 500 mA\nO1.2\n12\n11\nO1.1\nO2.2\n14\n13\nO2.1\nAnschlussquerschnitt Stecker IO (push-in):\n0,08 - 1,5 mm² ein-/feindrähtig\n0,25 -1,0 mm² mit Aderendhülse\nAbisolierlänge 6 .. 7 mm\nZur Entriegelung der Push-In-Anschlüsse wird ein Schlitz-Schraubendreher (≤ 2,5 mm) benötigt\nAnschluss CM (Stromsensoren)\nKlemme\n1\n2\n3\n4\n5\n6\n7\n8\nBezeichnung IL1.1 IL1.2 IL2.1 IL2.2 IL3.1 IL3.2 IN.1 IN.2\nStromsensor\nL1\nL2\nL3\nN\nAnschlussquerschnitt Stecker CM (push-in):\n0,08 - 2,5 mm² ein-/feindrähtig\n0,25 -1,5 mm² mit Aderendhülse\nAbisolierlänge 8 .. 9 mm\nHier finden Sie alle weiteren Informationen zum DEHNrecord SD",
+      "related_imgs":[1]
+    },
+    {
+      "id": 7,
+      "title": "Installation Instructions",
+      "content": "Montage\nDie Montage des Geräts erfolgt auf einer 35-mm-Hutschiene nach EN 60715.\nVorsicherung\nPassend zur Anschlussleitung muss die Vorsicherung gewählt werden, z.B. bei 1,5 mm2 -> B 16 A\nAnschluss\nDRC SD 1 1 – Art.-Nr. 910 920\nSpannungsversorgung über L1 der Messspannung\nDas Gerät kann Versorgungsunterbrechungen bis 5 s überbrücken. Bei längeren Unterbrechungen werden die Daten mit reduzierter Genauigkeit erfasst.\nVersorgungsspannung UB: 230 VAC (50 Hz), max. 30 mA\n300 V CAT III\nL1\nL2\nL3\nN/PEN\nEs kann auch in Verbindung mit einem Überspannungsschutzgerät SPD (Surge Protective Device) installiert werden.\nZur Verbindung mit einem SPD gibt es passende Kammschienen.\nDie Rastelemente der Geräte besitzen eine Dauerentriegelungsposition, um ein gemeinsames Aufsetzen/Entnehmen auf die Hutschiene zu erleichtern.\nVorsicherung\nDie Vorgaben des jeweiligen SPDs sind zu beachten.\nBeispiel-Verdrahtung eines SPDs mit Fernmeldekontakt:\n·  SPD-Kontakt (Anschluss 11) mit Hilfsspannung 12 VDC (Stecker IO Kl. 3) verbinden\n·  Rückmeldung von SPD-Kontakt (Anschluss 12 oder 14) an Digitaleingang I1.1 (Stecker IO Kl. 5)\n· Verbindung Masse (Stecker IO Kl. 4 und 6)\n300 V CAT IV",
+      "related_imgs":[]
+    },
+    {
+      "id": 8,
+      "title": "Connection and Power Supply for DRC SD 2",
+      "content": "Anschluss\nDRC SD 2 1 – Art.-Nr. 910 921\nSpannungsversorgung 24 V DC extern\nErfasst Unterbrechungen und Einbrüche auch > 5 s entsprechend EN61000-4-30, Klasse A bei unterbrechungsfreier Spannungsversorgung 24 VDC.\nVersorgungsspannung UB: 24 VDC, max. 100 mA\nL1\nL2\nL3\nN/PEN\n24 VDC\nBeispiel-Verdrahtung eines SPDs mit Fernmeldekontakt:\n·  SPD-Kontakt (Anschluss 11) mit Versorgungs-spannung 24 VDC (Stecker IO Kl. 3) verbinden\n·  Rückmeldung von SPD-Kontakt (Anschluss 12 oder 14) an Digitaleingang I1.1 (Stecker IO Kl. 5)\n· Verbindung Masse (Stecker IO Kl. 4 und 6)",
+      "related_imgs":[2]
+    },
+    {
+      "id": 9,
+      "title": "Testing and Commissioning",
+      "content": "Test\nNach Anlegen der Spannung:\nLED 1 blinkt grün bei korrekter Spannungsversorgung\nLED 2  leuchtet grün bei guter Spannungsqualität (in Werkskonfiguration)\nInbetriebnahme\nDEHNrecord SD direkt mit Rechner verbinden\n1. Rechner konfigurieren: IP 169.254.0.1, Sub. 255.255.255.0\n2. Rechner und DEHNrecord SD direkt mit Netzwerkkabel verbinden\n3. Webserver aktivieren: Taste 2 (Basic) kurz drücken, LED 1 leuchtet blau.\n4. Zugriff mit Browser: http://169.254.0.10\nKennwort im Auslieferzustand: smartdevice\nPrüfung\nNach erfolgreicher Anmeldung können z.B. folgende Eigenschaften geprüft und Einstellungen getätigt werden: Drehfeldrichtung der Spannungsanschlüsse, Anschluss der Strommessspulen, Anschluss des Impulsstromsensors.\nKonfiguration\nÜber den Webserver kann das DEHNrecord SD passend konfiguriert werden.\nDer Zugang zur Cloud (DEHNmonitor PQ) ist vorkonfiguriert (MQTT, Port 8883).\nLED 1 leuchtet grün, sobald der Zugriff auf den DEHNmonitor PQ funktioniert.\nProduktregistrierung\nFür die Produktregistrierung im DEHNmonitor PQ (www.dehn.de/powerquality-monitor) werden Seriennummer und die vier Ziffern hinter der Seriennummer benötigt.\nDiese sind nur auf dem Gerät selbst abgedruckt!\nBeispiel: „0000“ in „FHA12345678-0000“",
+      "related_imgs":[2]
+    },
+    {
+      "id": 10,
+      "title": "Manufacturer Contact and Legal Notice (Repeated)",
+      "content": "Überspannungsschutz\nDEHN SE\nHans-Dehn-Str. 1\nTel. +49 9181 906-0\nPostfach 1640\nwww.dehn-international.com\nBlitzschutz/Erdung\nArbeitsschutz\nDEHN schützt.\n92306 Neumarkt\nGermany",
+      "related_imgs":[]
+    },
+    {
+      "id": 11,
+      "title": "English Version: Product Overview and Manufacturer Information",
+      "content": "DEHNrecord SD\nMultifunctional measurement and analysis device for monitoring power quality\nInstallation instructions\nSurge Protection\nLightning Protection\nSafety Equipment\nDEHN protects.\nDEHN SE\nHans-Dehn-Str. 1\nPostfach 1640\n92306 Neumarkt\nGermany\nTel. +49 9181 906-0\nwww.dehn-international.com\nPublication No. 2084 / Update 01.23         Mat. No. 3015951\n© Copyright 2023 DEHN SE",
+      "related_imgs":[]
+    },
+    {
+      "id": 12,
+      "title": "English Version: Security and Configuration Warning",
+      "content": "Security\nConfiguration\nWARNING\nRisk of electric shock\nA DEHNrecord SD may only be installed and connected by an electrically skilled person in accordance with your country's installation standards!\nIEC 60417-6182:\nInstallation, electrotechnical expertise",
+      "related_imgs":[]
+    },
+    {
+      "id": 13,
+      "title": "English Version: Device Specification and Features",
+      "content": "Specification\nThe DEHNrecord SD is a DIN-rail-mounted measurement and analysis device for:\nPower quality according to EN61000-4-30, class A\nThe analysis is performed according to EN50160 and individual specifications.\nImpulse currents\nImpulse currents can be detected and evaluated through an external sensor.\nCurrent, power, energy\nThrough up to 4 current sensors, load and neutral conductor currents can be measured, from which the corresponding performance and energy values can be determined.\nPower-frequency overvoltages as per EN50550 are detected and switch-off information can be set for an external MPD.\nDigital inputs and outputs\nInputs can be monitored for state changes and logically linked (e.g. SPD monitoring).\nOutputs can be assigned to internal functions in a user-specific manner.\nWeb server\nThe basic settings can entered via the internal Web server: Operating location, network configuration, assignment and type of external coils/transducers for current measurement, and much more.\nAccess to the web server is explained under “Commissioning”.\nModbus TCP\nDevice access via Ethernet interface enables access to parameters, limit values, current, cyclical data/statuses and event data.\nDEHNmonitor PQ (Cloud from DEHN)\nConfiguration of the DEHNrecord SD and access to the current, cyclical and historical data/statuses/event data, including detail charts.",
+      "related_imgs":[]
+    },
+    {
+      "id": 14,
+      "title": "English Version: Delivery and Disposal",
+      "content": "Delivery includes\nDevice (including I/O connector and CM connector)\nInstallation instructions\nAccessories (optional)\nImpulse current sensor\nCurrent sensors (split-core current transformers, Rogowski coils)\nBusbars (suitable for surge protective device)\nDisposal\nThe device must not be disposed of in the household waste! For more information please refer to our website: www.dehn-international.com",
+      "related_imgs":[]
+    },
+    {
+      "id": 15,
+      "title": "English Version: Device Description and Connections",
+      "content": "Device description\nCross-sectional area L1/L2/L3/N:\n1.5 - 6 mm² fine-stranded/stranded-wire\n1.5 - 10 mm² solid-wire\nStripping length: 16 mm\nPZ 2\n4 Nm\nL1\nL2\nL3 N/PEN\nLED 1 (Device)\nLED 2 (Status)\nPushbutton 1 (Option)\nPushbutton 2 (Basic)\nEthernet\nI/O connection\nCM connection\nAttention! Current sensors must be connected to the device before mounting on the current conductor!\nA slotted screwdriver (≤ 2,5 mm) is required to unlock the push-in connections\nDesignation\nFunction (in factory setting)\nL1\nMeasurement input and power supply for model DRC SD 1 ...\n(L1), L2, L3, N/PEN Measurement input\nLED 1 (Device)\nLED 2 (Status)\nPush button 1 (Option)\nPush button 2 (Basic)\nEthernet\nI/O connection\nGreen (flashing):  Start\nGreen (lights up): Cloud connection active\nBlue:\nWeb server active\nYellow:\nAction 1 active\nAction 2 active\nRed:\n(RGB LED, active status messages are displayed consecutively)\nLights up green: Power quality OK (in factory setting, can be assigned to other device functions)\nShort (< 1 s): Action 1: start fast data transfer\nLong (> 5 s): Action 2: device stop/start\nLong (> 10 s): factory reset\nShort (< 1 s): activate web server\nLong (> 5 s): device reset\nNetwork connection:\nConnection to internal Web server, Modbus TCP, cloud\nConnections for impulse current sensor, int./ext. power supply, digital inputs and outputs\nCM connection\nConnections for current sensors",
+      "related_imgs":[3]
+    },
+    {
+      "id": 16,
+      "title": "English Version: Device Description (Plug)",
+      "content": "Device description (plug)\nI/O connection (input, output, supply, impulse coil)\nDesignation\nImpulse current sensor\n24-Volt version (Model DRC SD 2 ...)\nExt. power supply +24 V\n230-Volt version (Model DRC SD 1 ...)\nAuxiliary voltage, output +12 V, exclusively for the operation of the potential-free digital inputs\nTerminal\n2\n4\n1\n3\nImp2\nUe-\nImp1\nUe+\n(+24 Vin)\nUe+\n(+12 Vout)\nCable length maximum 30 m\n–      Observe polarity!      +\nInput 1: max. 30 VDC\nInput 2: max. 30 VDC\nInput 3: max. 30 VDC\nI1.2\nI2.2\nI3.2\n6\n8\n10\n5\n7\n9\nI1.1\nI2.1\nI3.1\nCable length maximum 30 m\nPolarity does not matter\nO1.2\n12\n11\nO1.1\nA slotted screwdriver (≤ 2.5 mm) is required to unlock the push-in connectors\nCM connection (current sensors)\nTerminal\n1\n2\n3\n4\n5\n6\n7\n8\nDesignation\nIL1.1 IL1.2 IL2.1 IL2.2 IL3.1 IL3.2 IN.1 IN.2\nCurrent sensor\nL1\nL2\nL3\nN\nCross-sectional area plug CM (push-in):\n0.08 - 2.5 mm² solid-wire/fine-stranded\n0.25 -1.5 mm² with ferrule\nOutput 1 (potential-free contact)\nmax. 30 V, max. 500 mA\nOutput 2 (potential-free contact)\nmax. 30 V, max. 500 mA\nCross-sectional area plug IO (push-in):\n0.08 - 1.5 mm² solid-wire/fine-stranded\n0.25 -1.0 mm² with ferrule\nStripping length: 6 ... 7 mm\nO2.2\n14\n13\nO2.1\nStripping length: 8 ... 9 mm\nLearn all about the DEHNrecord SD here.",
+      "related_imgs":[3]
+    },
+    {
+      "id": 17,
+      "title": "English Version: Installation",
+      "content": "Installation\nConnection\nThe device is installed on a 35 mm DIN rail as per EN 60715.\nBackup fuse\nThe backup fuse must be chosen to match the connecting cable; e.g. for 1.5 mm2 -> B 16 A\nDRC SD 1 1 – Part No. 910 920\nPower supply via L1 of the measuring voltage\nThe device can bridge supply interruptions for up to 5 s.\nIn the event of longer interruptions, the data is recorded with reduced accuracy.\nSupply voltage UB: 230 VAC (50 Hz), max. 30 mA\n300 V CAT III\nL1\nL2\nL3\nN/PEN\nIt can be installed together with a surge protective device (SPD).\nThere are matching busbars for the connection with an SPD.\nThe snap-on elements of the devices have a permanent unlocking position to facilitate their joint attachment to and removal from the DIN rail.\nBackup fuse\nThe specifications of the respective SPD must be observed.\n5   6      4 3\n11 14 12\nExample wiring of an SPD with remote signalling contact:\n·  Connect SPD contact (connection 11) with auxiliary voltage 12 VDC (plug I/O tmnl 3)\n·  Feedback from SPD contact (connection 12 or 14) to digital input I1.1 (plug I/O tmnl 5)\n· Ground connection (plug I/O tmnl 4 and 6)\n300 V CAT IV",
+      "related_imgs":[]
+    },
+    {
+      "id": 18,
+      "title": "English Version: Connection and Power Supply for DRC SD 2",
+      "content": "Connection\nTest\nDRC SD 2 1 – Part No. 910 921\n24 V DC external power supply\nDetects interruptions and drop > 5 s as per EN61000-4-30, class A for 24 VDC uninterruptible power supply.\nSupply voltage UB: 24 VDC, max. 100 mA\nL1\nL2\nL3\nN/PEN\n24 VDC\nExample wiring of an SPD with remote signalling contact:\n·  Connect SPD contact (connection 11) with supply voltage 24 VDC (plug I/O tmnl 3)\n·  Feedback from SPD contact (connection 12 or 14) to digital input I1.1 (plug I/O tmnl 5)\n· Ground connection (plug I/O tmnl 4 and 6)\nAfter applying the voltage:\nLED 1 flashes green when the power supply is correct\nLED 2  lights up green when the power quality is good (in factory configuration)",
+      "related_imgs":[4]
+    },
+    {
+      "id": 19,
+      "title": "English Version: Commissioning and Product Registration",
+      "content": "Commissioning\nConnect DEHNrecord SD directly to computer\n1. Configure computer: IP 169.254.0.1, Sub. 255.255.255.0\n2. Connect computer and DEHNrecord SD directly with network cable\n3. Activate Web server: Press button 2 (Basic) briefly, LED 1 lights up blue\n4. Access with browser: http://169.254.0.10\nFactory-set password: smartdevice\nTesting\nAfter successful registration, the following properties can be checked and settings made: Rotational field direction of the voltage connections, Current measuring coil connection, Impulse current sensor connection\nConfiguration\nThe DEHNrecord SD can be suitably configured via the Web server. Access to the cloud server (DEHNmonitor PQ) is preconfigured (MQTT, port 8883).\nLED 1 lights up green once access to the DEHNmonitor PQ is working.\nProduct registration\nFor product registration at DEHNmonitor PQ (www.dehn.de/powerquality-monitor), the serial number and the four digits after the serial number are required.\nThese are only printed on the device itself!\nExample: „0000“ in „FHA12345678-0000“.",
+      "related_imgs":[4]
+    },
+    {
+      "id": 20,
+      "title": "English Version: Manufacturer Contact and Legal Notice (Repeated)",
+      "content": "Surge Protection\nLightning Protection\nSafety Equipment\nDEHN protects.\nDEHN SE\nHans-Dehn-Str. 1\nTel. +49 9181 906-0\nPostfach 1640\nwww.dehn-international.com\n92306 Neumarkt\nGermany",
+      "related_imgs":[]
+    }
+  ]
+}

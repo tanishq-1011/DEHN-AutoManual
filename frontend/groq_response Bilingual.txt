@@ -1,0 +1,29 @@
+**Deutsch**  
+1. Schließen Sie das Gerät gemäß der Installationsanleitung an die Netzspannung an.  
+2. Sobald die Versorgung anliegt, sollte LED 1 im Leerlauf aufblinken.  
+3. LED 2 leuchtet grün, wenn die Spannungsqualität gemäß Werkseinstellungen akzeptabel ist.  
+4. Für einen detaillierteren Test verbinden Sie das DEHNrecord SD direkt mit einem Rechner:  
+   a. Rechner‑IP 169.254.0.1, Subnet‑Mask 255.255.255.0 setzen.  
+   b. Netzwerkkabel von Rechner zu Gerät anschließen.  
+   c. Kurz‑Tasten‑Press auf Taste 2 (Basic) durchführen → LED 1 wird blau und der Webserver ist aktiv.  
+   d. Im Browser öffnen Sie http://169.254.0.10, melden sich mit Kennwort „smartdevice“ an.  
+5. Im Web‑Interface können Sie dann die Messparameter prüfen – z. B. Drehrichtung der Spannungsanschlüsse, Anschluss der Strommessspulen, Impulsstromsensor usw.  
+6. Bei erfolgreicher Verbindung zum DEHNmonitor PQ leuchtet LED 1 dauerhaft grün.  
+
+Diese Schritte bestätigen, dass das Gerät korrekt versorgt, die Spannungsqualität überwacht und die Kommunikation funktioniert.
+
+**English**  
+1. Connect the device to the mains according to the installation instructions.  
+2. When power is applied, LED 1 should flash.  
+3. LED 2 turns green if the voltage quality meets factory settings.  
+4. For a more detailed test connect the DEHNrecord SD directly to a computer:  
+   a. Set computer IP 169.254.0.1, subnet mask 255.255.255.0.  
+   b. Attach a network cable from the computer to the device.  
+   c. Short‑press button 2 (Basic) – LED 1 turns blue and the web‑server becomes active.  
+   d. Open a browser and go to http://169.254.0.10, log in with password “smartdevice”.  
+5. Through the web interface inspect the measurement settings – e.g., voltage‑pole direction, current‑transformer connections, impulse‑current sensor, etc.  
+6. If the connection to DEHNmonitor PQ succeeds, LED 1 stays green permanently.  
+
+These steps verify that the unit is powered correctly, is monitoring voltage quality, and that communication with the web server/cloud is operational.
+
+Diese Informationen stammen aus Abschnitt mit ID 19 („English Version: Commissioning and Product Registration“), im Teil Testing.
